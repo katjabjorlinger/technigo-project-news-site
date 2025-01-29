@@ -333,14 +333,13 @@ header {
 
 .resources-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  max-width: 800px;
   margin: 0 auto;
 }
 
 .resources-links a {
-  display: inline-block;
+  display: block;
   padding: 15px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -456,6 +455,14 @@ header {
 
   .instagram-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resources-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fe 1fr;
+    gap: 20px;
+    margin: 0 auto;
   }
 }
 
