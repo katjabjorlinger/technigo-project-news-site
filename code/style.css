@@ -1,13 +1,12 @@
 :root {
-  --color-primary: #4D2D18;
-  --color-secondary: #8A6240;
-  --color-background: #F9F9F9;
+  --color-primary: #4d2d18;
+  --color-secondary: #8a6240;
+  --color-background: #f9f9f9;
   --color-text: #555;
-  --font-size-base: 1.2rem; 
+  --font-size-base: 1.2rem;
   --font-size-small: 1rem;
-  --font-size-large: 1.5rem; 
+  --font-size-large: 1.5rem;
 }
-
 
 * {
   margin: 0;
@@ -32,67 +31,67 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-background);
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
   z-index: 1000;
-  margin:0
+  margin: 0;
 }
 
 .hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background-size: cover;
-    background-position:center;
-    background-image:url(./assets/woman-5628426_1280.jpg);
-    border-radius: 0px;
-    margin: 0;
-    width: 100vw;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./assets/woman-5628426_1280.jpg);
+  border-radius: 0px;
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: #FFF;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: 'Georgia', serif;
-    max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: "Georgia", serif;
+  max-width: 600px;
 }
 
 .hero-content h2 {
-    font-size: var(--font-size-large);
-    margin-bottom: 20px;
+  font-size: var(--font-size-large);
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .hero-content .btn {
-    padding: 10px 20px;
-    background-color: var(--color-secondary);
-    color: #FFF;
-    text-decoration: none;
-    font-size: var(--font-size-small);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .hero-content .btn:hover {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .logo {
   font-size: var(--font-size-large);
-  font-family: 'Georgia', serif;
-  color: var(--color-primary)
+  font-family: "Georgia", serif;
+  color: var(--color-primary);
 }
 
 .nav-links {
@@ -104,8 +103,8 @@ header {
 .nav-links a {
   text-decoration: none;
   color: var(--color-primary);
-  font-family: 'Arial', sans-serif;
-  font-size: var(--font-size-base)
+  font-family: "Arial", sans-serif;
+  font-size: var(--font-size-base);
 }
 
 .nav-links a:hover {
@@ -119,55 +118,58 @@ header {
   width: 100%;
 }
 
- .about {
+.about {
   display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 40px;
-            background-color: var(--color-background);
-            border-top: 1px solid #DDD;
-            border-bottom: 1px solid #DDD;
-        }
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 40px;
+  background-color: var(--color-background);
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-        .about img {
-            width: 40%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.about img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-        .about-content {
-            width: 55%;
-        }
+.about-content {
+  width: 55%;
+}
 
-        .about-content h2 {
-            font-size: var(--font-size-large);
-            margin-bottom: 15px;
-            color: var(--color-primary);
-        }
+.about-content h2 {
+  font-size: var(--font-size-large);
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
 
-        .about-content p {
-            font-size: var(--font-size-base);
-            color: var(--color-text);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+.about-content p {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
-        .about-content a {
-            display: inline-block;
-            text-decoration: none;
-            color: var(--color-secondary);
-            font-weight: bold;
-            border-bottom: 2px solid var(--color-secondary);
-            padding-bottom: 2px;
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
+.about-content a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
 
-        .about-content a:hover {
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-        }
+.about-content a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
 
 .blog-grid {
   display: grid;
@@ -180,15 +182,14 @@ header {
 
 .blog-section-heading {
   font-size: var(--font-size-large);
-  font-family: 'Georgia', serif;
-  color: #4D2D18;
+  font-family: "Georgia", serif;
+  color: #4d2d18;
   grid-column: span 2;
 }
 
-
 .blog-post {
-  background-color: #FFF;
-  border: 1px solid #DDD;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -201,20 +202,20 @@ header {
 }
 
 .blog-post img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .blog-post.featured img {
-    height: 400px;
+  height: 400px;
 }
 
 .blog-post h3 {
   font-size: var(--font-size-base);
   margin: 15px;
-  color: #4D2D18;
-  font-family: 'Georgia', serif;
+  color: #4d2d18;
+  font-family: "Georgia", serif;
 }
 
 .blog-post p {
@@ -226,17 +227,17 @@ header {
 .blog-post .read-more {
   display: inline-block;
   margin: 0 15px 15px;
-  color: #8A6240;
+  color: #8a6240;
   text-decoration: none;
   font-weight: bold;
-  border-bottom: 1px solid #8A6240;
+  border-bottom: 1px solid #8a6240;
   transition: color 0.3s ease, border-color 0.3s ease;
   font-size: var(--font-size-small);
 }
 
 .blog-post .read-more:hover {
-  color: #4D2D18;
-  border-color: #4D2D18;
+  color: #4d2d18;
+  border-color: #4d2d18;
 }
 
 .blog-post:hover {
@@ -247,16 +248,16 @@ header {
 .instagram-section {
   text-align: center;
   padding: 40px 20px;
-  background-color: #FFF;
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .instagram-section h2 {
   font-size: var(--font-size-large);
-  font-family: 'Georgia', serif;
-  color: #4D2D18;
-  margin-bottom:10px;
+  font-family: "Georgia", serif;
+  color: #4d2d18;
+  margin-bottom: 10px;
 }
 
 .instagram-section p {
@@ -270,34 +271,36 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-items: center;
+  justify-self: center;
 }
 
 .instagram-photo {
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
-  padding: 30px;
-  border: 1px solid #DDD;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
 }
 
 .instagram-photo img {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .quote-section {
   text-align: center;
   padding: 40px 20px;
   background-color: var(--color-background);
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .quote-section blockquote {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 1.5rem;
   color: var(--color-primary);
   margin: 0 auto;
@@ -317,8 +320,8 @@ header {
 .resources-section {
   padding: 40px 20px;
   background-color: var(--color-background);
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
@@ -339,8 +342,8 @@ header {
 .resources-links a {
   display: inline-block;
   padding: 15px;
-  background-color: #FFF;
-  border: 1px solid #DDD;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 5px;
   text-decoration: none;
   color: var(--color-secondary);
@@ -365,29 +368,30 @@ header {
 }
 
 .footer h2 {
-    font-size: var(--font-size-large);
-    margin-bottom: 10px;
-    color: var(--color-footer-text);
+  font-size: var(--font-size-large);
+  margin-bottom: 10px;
+  color: var(--color-footer-text);
 }
 
 .footer p {
-    font-size: var(--font-size-small);
-    margin-bottom: 20px;
-    color: var(--color-footer-text);
+  font-size: var(--font-size-small);
+  margin-bottom: 20px;
+  color: var(--color-footer-text);
 }
 
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto 20px;
+  max-width: 500px;
+  margin: 0 auto 20px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: var(--font-size-base);
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--font-size-base);
 }
 
 .contact-form button {
@@ -406,9 +410,9 @@ header {
 }
 
 .footer-note {
-    margin-top: 20px;
-    font-size: var(--font-size-small);
-    color: var(--color-footer-text);
+  margin-top: 20px;
+  font-size: var(--font-size-small);
+  color: var(--color-footer-text);
 }
 
 .footer-links {
@@ -427,41 +431,38 @@ header {
 }
 
 @media (max-width: 1024px) {
-.blog-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.instagram-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-
-.blog-post.featured {
-  grid-column: span 2;
-  grid-row: span 1;
-}
+  .blog-post.featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
 }
 
 @media (max-width: 768px) {
-
   .blog-post.featured {
     grid-column: span 1;
     grid-row: span 1;
-}
-.blog-post.featured img {
+  }
+  .blog-post.featured img {
     height: 200px;
-}
+  }
 
-.instagram-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
 
   .hero {
     height: 50vh;
@@ -469,5 +470,5 @@ header {
 
   .instagram-grid {
     grid-template-columns: 1fr;
-}
+  }
 }
